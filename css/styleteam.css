@@ -1,0 +1,156 @@
+/*---------Start my site ------------*/
+
+/* Секция 4 */
+
+    .team-cont {
+        display: block;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        padding: 5% 1% 5% 1%;
+    }
+    .team-wrapper {
+        color: #2D2D2D;
+        display: flex;
+        flex-wrap: wrap; 
+        width: 100%;
+    }
+    .team-wrapper h2 {
+        text-align: left;
+        font-family: 'OpenSans Bold';
+        text-transform: uppercase;
+        font-size: 230%;
+        margin: 0px 0px 0px 5%;
+        margin-bottom: 2%;
+    }
+    .team-wrapper h3 {
+        text-align: left;
+        font-family: 'OpenSans Bold';
+        text-transform: uppercase;
+        font-size: 100%;
+        margin: 0px 0px 0px 4%;
+        margin-bottom: 2%;
+    }
+    .team-wrapper p {
+        text-align: left;
+        font-family: 'OpenSans Regular'; 
+        font-size: 16px;
+        margin: 0% 60% 0% 5%;
+    }
+    .team-line {
+        width: 10%;
+        height: 2px;
+        background-color: #FF2D2D;
+        border: none;
+        margin-top: 3%;
+        margin-left: 5%;
+    }
+    .team-place {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding-top:4%;
+        margin-left: 5%;    
+    } 
+    .team-place h3 {
+        text-align: left;
+        font-family: 'OpenSans Regular';
+        text-transform: uppercase;
+        font-size: 180%;
+        margin: 0px 0px 0px 5%;
+        margin-bottom: 2%;
+    } 
+    .team-place p {
+        text-align: left;
+        font-family: 'OpenSans Regular';   
+        font-size: 16px;
+        padding-top: 1%;
+        margin: 0% 25% 0% 5%;
+    }
+    .team-parent {
+        width: 230px;
+        padding: 1% 1%;
+        background-size: cover;
+    }
+    .team-imgboss {
+        width: 290px;
+        height: 390px;
+        background-color: #eb6d4a8f;
+        margin-top: 1%;
+    }
+    .team-imgclerc {
+        width: 100%
+    }
+    .team-foto {
+        width: 155px;
+        margin: 1% 1%;
+        background-color: #d4dce680;
+        min-width: 140px;
+    }
+    .team-foto p {
+        position: relative;
+        opacity: 0.5;
+        margin-left: 0%;
+        background-color: #000000;
+        text-align: center;
+        color: white; 
+        width: 155px;
+        min-width: 140px;
+        visibility: hidden;
+    }
+.team-foto:hover p {
+        visibility: visible;
+    }
+
+    /* Панель навигации */
+    .team-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 5%;
+        padding-top: 1%;
+        min-width: 60%;
+        min-height:60px;
+        background-color: #ffffff;
+    }
+    .team-menu a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'OpenSans Italic';
+        padding-left: 0%;
+        padding-right: 0%;
+        width: 100px;
+        color: #000000;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .team-menu a:hover{
+            text-decoration: underline;
+    }
+    .team-text p {
+            padding-top: 0px;
+            margin-left: 0%    
+            color: #fff;
+            font-size: 100%;
+    }
+
+    @media screen and (max-width: 1000px) {
+    .team-menu {
+        flex-wrap: wrap;
+    }
+    .team-menu a {
+        height: 5vw;
+    }
+    }
+    @media screen and (max-width: 1400px) {
+    .team-place {
+        display: flex;
+        flex-wrap: wrap;
+    }

@@ -1,0 +1,103 @@
+/*---------Start my site ------------*/
+
+/* Секция 3 */
+
+    .products-cont {
+        display: block;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        padding: 5% 1% 5% 1%;
+    }
+    .products-wrapper {
+        color: #2D2D2D;
+        display: inherit;
+        flex-wrap: wrap; 
+        width: 100%;
+    }
+    .products-wrapper h2 {
+        text-align: center;
+        font-family: 'OpenSans Bold';
+        text-transform: uppercase;
+        font-size: 200%;
+        margin: 0px;
+        margin-bottom: 2%;
+    }
+    .products-wrapper p {
+        text-align: center;
+        font-family: 'OpenSans Regular';
+        text-transform: uppercase;
+        font-size: 16px;
+        margin: 0% 30% 0% 30%;
+    }
+    .products-line{
+        width: 15%;
+        height: 2px;
+        background-color: #FF2D2D;
+        border: none;
+    }
+/* Панель навигации */
+    .products-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 15%;
+        padding-right: 15%;
+        min-width: 60%;
+        min-height: 90px;
+        background-color: #ffffff;
+    }
+    .products-menu a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 2%;
+        padding-right: 2%;
+        height: 90px;
+        width: 130px;
+        color: #000000;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 100%;
+    }
+        .products-menu a:hover{
+            color: #FF3F40;
+    }
+        .text p {
+            padding-top: 0px;
+            margin-left: 0%    
+            color: #fff;
+            font-size: 100%;
+    }
+
+        @media screen and (max-width: 800px) {
+        .products-menu {
+            flex-wrap: wrap;
+    }
+        .products-menu a {
+            height: 5vw;
+    }
+    }
+    .products-place {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+    .products-parent {
+        margin: 1% 1%;
+        width: 240px;
+        height: 300px;
+        min-width: 200px;
+        background-color: #5281FF;
+        background-size: cover;
+    }
+    .products-img {
+        width: 100%;
+    }

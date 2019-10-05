@@ -1,0 +1,211 @@
+/*---------Start my site ------------*/
+    /* Локально размещенные шрифты*/
+        @font-face {
+            src: url('../Font/OpenSans-Regular.ttf');
+            font-family: 'OpenSans Regular';
+        }
+
+        @font-face {
+            src: url('../Font/OpenSans-Italic.ttf');
+            font-family: 'OpenSans Italic';
+        }
+
+        @font-face {
+            src: url('../Font/OpenSans-Bold.ttf');
+            font-family: 'OpenSans Bold';
+        }
+
+        @font-face {
+            src: url('../Font/OpenSans-SemiBold.ttf');
+            font-family: 'OpenSans SemiBold';
+        }
+
+        @font-face {
+            src: url('../Font/OpenSans-ExtraBold.ttf');
+            font-family: 'OpenSans ExtraBold';
+        }
+
+   body {
+    margin: 30px 10vw 30px 10vw;
+    font-family: 'OpenSans Regular', Helvetica, Arial, sans-sherif;
+    background-color:  #F6F2F2;
+    }
+    nav {margin-bottom: 5vw;
+    }
+
+/* General container */
+    .substrate-main {
+        width: auto;
+        height: auto;
+        background-color: #F6F2F2;
+        margin: 0px;
+        margin-top: 40px;
+    }
+
+/* Панель навигации */
+    .navigator-menu {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 20%;
+        padding-right: 20%;
+        min-width: 60%;
+        min-height: 90px;
+        background-color: #2D2D2D;
+    }
+    .navigator-menu a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 4%;
+        width: 80%;
+        color: #E0E0E0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 100%;
+    }
+        .navigator-menu a:hover{
+            background-color: #FF3F40;
+        }
+        .text p {
+            padding-top: 0px;
+            margin-left: 0%    
+            color: #fff;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 600px) {
+        .navigator-menu {
+            flex-wrap: wrap;
+        }
+        .navigator-menu a {
+            height: 5vw;
+        }
+        }
+
+
+/* 1 Секция */
+        .intro-cont {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            height: auto;
+            background-color: #F6F2F2;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            }
+        .intro-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap; 
+            width: 50%;
+        }
+        .intro-wrapper h1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            text-overflow: ellipsis;
+            font-family: 'OpenSans ExtraBold';
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 300%;
+            color: #2D2D2D;
+            margin: 0px;
+            margin-bottom: 2%;
+        }
+        .intro-wrapper p {
+            margin-right: 50px;
+            }
+        .contact-batton{
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            background-color: #FF2D2D;
+            color: #fff;
+            font-family: 'OpenSans-Bold';
+            font-size: 18px;
+            width: 40%;
+            padding: 16px 0;
+            margin-bottom: 20px;
+        }
+        .intro-wrapper-img {
+            width: 50%;
+            background-color: #F6F2F2;           
+            margin-bottom: 2%;     
+        }
+            .work-space {
+            padding: 35% 48%;
+            min-width: 4%;
+            background-image: url('../image/workspace-inspiration-daily-inspiration.jpg');
+            background-size: cover;
+            background-position: 100% 100%;
+            background-color: #F6F2F2;
+        }
+        @media screen and (max-width: 1300px) {
+        .intro-cont, .intro-wrapper, .intro-wrapper-img {
+            flex-wrap: wrap;
+            justify-content: space-between;  
+            display: inline-block;
+            vertical-align: bottom;
+            margin-left: 0vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+             width: 98%;
+        }
+        .intro-wrapper h1 {
+            font-size: 200%;
+        }
+        .contact-batton {
+            font-size: 110%;
+        } 
+        }
+
+/* Footer */
+
+    .box-footer {
+        display: flex;
+        flex-wrap: nowrap;  
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2% 10% 2% 5%;
+        min-height: 50px;
+        color: #B8B8B8;
+        font-size: 60%;
+        background-color: #2D2D2D;
+    }
+
+    .box-social {
+        display: flex;
+        flex-wrap: nowrap;  
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 200px;
+        min-height: 50px;
+    }
+    .box-social a {
+        padding-right: 5%;
+    }
+    @media screen and (max-width: 800px) {
+        .box-footer {
+            flex-wrap: wrap;
+        }
+        .box-social {
+            flex-wrap: wrap;     
+        }
+        .box-social a {
+            height: 5vw;
+            padding-right: 5%;
+        }
+    }
+
+/*    @import url("css/styleservice.css");
+/* 3 Страница */    
+/*    @import url("css/styleproduct.css");
+/* 4 Страница */    
+ /*   @import url("css/styleteam.css");*/
+

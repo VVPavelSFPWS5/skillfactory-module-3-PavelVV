@@ -1,0 +1,109 @@
+/*---------Start my site ------------*/
+
+/* Секция 2 */
+
+        .service-cont {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width: auto;
+            height: auto;
+            background-color: #ffffff;
+            padding: 5% 1% 5% 1%;
+            }
+        .service-wrapper-qu {
+            color: #2D2D2D;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap; 
+            width: 40%;
+        }
+        .service-wrapper-qu h2 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            font-family: 'OpenSans Bold';
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 200%;
+            margin: 0px;
+            margin-bottom: 2%;
+        }
+        .service-wrapper, .service-wrapper-qu p {
+            padding-right: 20%;
+            font-size: 16px;
+            }
+        .service-batton {
+            display: inline-block;
+            box-sizing: border-box;
+            border-radius: 8px;
+            border-color: #FF2D2D;
+            border: 2px solid;
+            text-decoration: none;
+            text-align: center;
+            background-color: white;
+            color: red;
+            font-family: 'OpenSans-Bold';
+            font-size: 130%;
+            width: 47%;
+            padding: 16px 0;
+            margin-bottom: 20px;
+        } 
+        .service-wrapper {
+            color: #2D2D2D;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            flex-wrap: wrap; 
+            width: 55%;
+            padding: 0%;
+        }
+        .service-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; 
+            width: 50%;
+        }
+        .service > h3::before {
+            display: block;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 41px;
+            height: 41px;
+            margin-bottom: 23px;
+        }
+        .service > p {
+        font-family: 'OpenSans Regular';
+        font-size: 16px;
+        padding-right: 20%
+        }
+        .service > .manage::before {
+            content: url('../image/service-1.png');
+        }
+        .service > .logo::before {
+            content: url('../image/service-2.png');
+        }
+        .service > .uiux::before {
+            content: url('../image/service-3.png');
+        }
+        .service > .anim::before {
+            content: url('../image/service-4.png');
+        }
+
+        @media screen and (max-width: 800px) {
+        .service-cont, .service-wrapper-qu, .service-wrapper, .service-info {
+            flex-wrap: wrap;
+            justify-content: space-between;  
+            display: grid;
+            margin-left: 0vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            width: 98%;
+            font-size: 80%;
+        } 
+        }
